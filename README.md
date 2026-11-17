@@ -2,6 +2,8 @@
 
 マージされたプルリクエスト
 
+- **[aws/aws-cdk-cli](https://github.com/aws/aws-cdk-cli)**：[fix(cli): cdk migrate --from-scan fails when stdout is not a terminal](https://github.com/aws/aws-cdk-cli/pull/2146)<br>
+  出力先が端末でないとき（CI、パイプ、ファイルへのリダイレクト）に`cdk migrate --from-scan`が異常終了していた不具合を修正。
 - **[pulumi/pulumi](https://github.com/pulumi/pulumi)**：[Fix silent `up --plan` failure for whole-resource stack outputs](https://github.com/pulumi/pulumi/pull/25629)<br>
   スタック出力にリソースをそのまま渡すと、`pulumi up --plan`がエラーを表示しないまま失敗していた不具合を修正（Node.js SDKとエンジン）。
 - **[TencentCloud/TencentDB-Agent-Memory](https://github.com/TencentCloud/TencentDB-Agent-Memory)**：[fix(deploy): brace shell vars before full-width punctuation for bash 3.2](https://github.com/TencentCloud/TencentDB-Agent-Memory/pull/1613)<br>
